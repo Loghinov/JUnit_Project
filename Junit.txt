@@ -1,0 +1,16 @@
+Homework
+You don’t need to create a new project. You may copy workshop/BankAccount Java class from the shared GitHub project into your own project and place it in a separate package (e.g., junit or unit_tests). 
+Please keep the maven standard structure in mind:
+•	source code: src/main/java
+•	tests: src/test/java
+Optionally, you can create a maven Java project, implement a BankAccount class with the methods deposit(), withdraw(), transferTo(), freeze() and write unit tests to cover them.
+Homework deadline: Please submit your solution in Endava repository by EOD on Wednesday, October 1, 2025. 
+
+What to cover in tests:
+•	Constructor validation tests
+•	Deposit/withdraw happy-path tests
+•	All invalid-argument tests
+•	Overdrawn check (should remain false for valid operations)
+•	At least one Hamcrest assertion per scenario
+•	(Optional) Parameterized tests, @BeforeAll, @BeforeEach
+•	The test suite should be runnable via mvn test. Check the maven-surefire-plugin configuration (e.g., **/*Test.java patterns, Jupiter engine).
